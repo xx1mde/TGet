@@ -4,6 +4,7 @@ from modules.logger import Logger
 from modules.command import CommandObserver
 from objects import TGetObjects, FlagsObject
 
+
 if platform.system() == "Linux":
 	import uvloop
 	asyncio.set_event_loop_policy(uvloop.EventLoop())
