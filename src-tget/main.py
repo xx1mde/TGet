@@ -43,7 +43,7 @@ class TGetCore(object):
 		async with TGetObjects.ClientObject:
 			Logger.clear()
 			Logger.hello()
-			await CommandObserver().run()
+			await CommandObserver(Logger).run()
 
 	def startClient(self): TGetObjects.ClientObject.run(self.runCore())
 	def _exitEvent(self):
