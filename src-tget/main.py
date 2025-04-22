@@ -7,7 +7,7 @@ from objects import TGetObjects, FlagsObject
 
 if platform.system() == "Linux":
 	import uvloop
-	asyncio.set_event_loop_policy(uvloop.EventLoop())
+	asyncio.set_event_loop_policy(uvloop.EventLoopPolicy())
 	Logger.log("LibUV policy setted")
 else: Logger.log("LibUV is not supported")
 
